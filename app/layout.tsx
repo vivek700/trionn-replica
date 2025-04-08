@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Syne } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 
@@ -13,10 +13,15 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const syne = Syne({
+  variable: "--font-syne",
+  subsets: ["latin"],
+});
+
 const dirtyLine = localFont({
   src: [
     {
-      path: "./fonts/dirtyline-36daysoftype-2022.otf",
+      path: "./fonts/Dirtyline-36daysoftype-2022.otf",
     },
   ],
   variable: "--font-dirtyline",
@@ -35,7 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${dirtyLine.variable} antialiased `}
+        className={`${geistSans.variable} ${geistMono.variable} ${dirtyLine.variable} ${syne.variable} antialiased`}
       >
         {children}
       </body>
