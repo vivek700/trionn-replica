@@ -5,21 +5,15 @@ import React from "react";
 const Navbar = () => {
   return (
     <header>
-      <nav className="flex py-9 px-14 justify-between">
+      <nav className="flex py-8.5 justify-between">
         <section>
-          <Image
-            alt="Trionn"
-            src={"logo.svg"}
-            width={118}
-            height={22}
-            className="w-24"
-          />
+          <Image alt="Trionn" src={"logo.svg"} width={128} height={24} />
         </section>
         <section className="flex gap-x-2 items-center">
-          <span className="bg-[#2B2C2F] -mt-3  rounded-full w-11 h-11 flex items-center justify-center">
+          <span className="bg-[#2B2C2F] -mt-3  rounded-full w-10 h-10 flex items-center justify-center">
             <Sun />
           </span>
-          <span className="bg-[#2B2C2F] w-11 h-11 -mt-3 -rotate-90 rounded-full flex justify-center items-center">
+          <span className="bg-[#2B2C2F] w-10 h-10 -mt-3 -rotate-90 rounded-full flex justify-center items-center">
             <Text />
           </span>
         </section>

@@ -5,9 +5,11 @@ import Main from "./components/main/Main";
 export default function Home() {
   return (
     <>
-      <Navbar />
-      <Main />
-      <Footer />
+      <section className="max-w-6/7  mx-auto">
+        <Navbar />
+        <Main />
+        <Footer />
+      </section>
     </>
   );
 }
